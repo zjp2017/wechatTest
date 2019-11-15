@@ -1,5 +1,5 @@
 //index.js
-//获取应用实例
+//子组件调用父组件的方法
 const app = getApp()
 
 Page({
@@ -50,5 +50,9 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  // 子组件调用父组件的方法
+  getFn:function(res){
+    console.log(res.detail);
   }
 })
