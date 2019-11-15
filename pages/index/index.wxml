@@ -1,6 +1,7 @@
 <!--index.wxml-->
 <view class="container">
   <view>父组件</view>
-  <a-com></a-com>
+  <a-com data-ref="1"></a-com>
+   <a-com data-ref="2"></a-com>
   <b-com></b-com>
 </view>

@@ -4,7 +4,7 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+   
   },
 
   /**
@@ -19,5 +19,8 @@ Component({
    */
   methods: {
 
+  },
+  ready(){
+    console.log(this.properties);
   }
 })
