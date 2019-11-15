@@ -1,2 +1,3 @@
 <!--components/a-com/a-com.wxml-->
-<text>components/a-com/a-com.wxml</text>
+<text>a组件</text>
+<button bindtap="addInfo">a组件传值给父组件</button>

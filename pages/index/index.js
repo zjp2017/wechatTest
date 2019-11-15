@@ -1,5 +1,5 @@
 //index.js
-//获取应用实例
+// 子组件传值给父组件通过自定义方法：
 const app = getApp()
 
 Page({
@@ -7,7 +7,8 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    aData:''
   },
   //事件处理函数
   bindViewTap: function() {
@@ -49,6 +50,13 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
+    })
+  },
+  // 自定义方法结构子组件A传过来的值
+  getCommitComAval:function(val){
+    console.log(val.detail);
+    this.setData({
+      aData: val.detail.val
     })
   }
 })

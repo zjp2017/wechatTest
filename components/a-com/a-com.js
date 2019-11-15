@@ -18,6 +18,12 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    addInfo:function(){
+      let obj={
+        val:'12',
+        list:[1,2.3]
+      }
+      this.triggerEvent('addInfo', obj)
+    }
   }
 })

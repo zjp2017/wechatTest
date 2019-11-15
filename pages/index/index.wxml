@@ -1,4 +1,8 @@
 <!--index.wxml-->
 <view class="container">
-  
+  父组件
+  <a-com bind:addInfo="getCommitComAval"></a-com>
+ <view>
+  组件a传过来的值：{{aData}}
+ </view>
 </view>
