@@ -1,4 +1,13 @@
 <!--index.wxml-->
 <view class="container">
-  
+  父页面
+  <view>
+  <button size="mini" bindtap="modifyVal">修改传给子组件的值</button>
+  <!-- <view>{{conmitVal}}</view> -->
+  <view>--------------</view>
+  <a-com title="{{conmitVal}}"></a-com>
+  <!-- <a-com title="二"></a-com>
+  <a-com ></a-com> -->
+  <view>--------------</view>
+  </view>
 </view>

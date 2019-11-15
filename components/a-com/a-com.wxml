@@ -1,2 +1,5 @@
 <!--components/a-com/a-com.wxml-->
-<text>components/a-com/a-com.wxml</text>
+<text>组件A</text>
+<view>{{title}}</view>
+<view>{{propsData}}</view>
+
