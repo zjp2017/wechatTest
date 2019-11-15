@@ -50,5 +50,9 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  // 父组件调用组件a的方法
+  useComAfn:function(){
+    this.selectComponent('#Acom').selfFn();
   }
 })
