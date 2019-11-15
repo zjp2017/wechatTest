@@ -1,7 +1,11 @@
 <!--index.wxml-->
 <view class="container">
   <view>父组件</view>
-  <a-com data-ref="1"></a-com>
-   <a-com data-ref="2"></a-com>
+  <button size="mini" bindtap="modefiy">修改值</button>
+  <a-com ref="1" bind:handleFn1="handleFunction1"></a-com>
+   <a-com ref="2" bind:handleFn2="handleFunction2"></a-com>
   <b-com></b-com>
+
+  <view>A中进行点击后处理的方法的结果:{{num1}} </view>
+  <view>B中进行点击后处理的方法的结果:{{num2}} </view>
 </view>

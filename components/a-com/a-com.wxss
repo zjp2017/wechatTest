@@ -1,1 +1,6 @@
 /* components/a-com/a-com.wxss */
+.com-a{
+  height: 400rpx;
+  width: 300rpx;
+  background: peachpuff;
+}

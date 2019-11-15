@@ -8,7 +8,9 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    num1:1,
+    num2:2
   },
   //事件处理函数
   bindViewTap: function() {
@@ -51,5 +53,24 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  modefiy(){
+    var n = this.data.num1+1;
+    var n2 = this.data.num2 + 10;
+    this.setData({
+      num1:n,
+      num2:n2
+    })
+  },
+  // 处理在第一处调用的方法
+  handleFunction1:function(res){
+    console.log('a1');
+    console.log(res.detail);
+  },
+  // 处理在第二处调用的方法
+  handleFunction2: function (res) {
+    console.log('a2');
+    console.log(res.detail);
   }
+
 })

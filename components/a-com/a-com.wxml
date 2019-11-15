@@ -1,2 +1,5 @@
 <!--components/a-com/a-com.wxml-->
-<text>A组件</text>
+<view class="com-a">
+  <view>A组件</view>
+  <button bindtap="modify" size="mini">修改</button>
+</view>
