@@ -1,2 +1,8 @@
 <!--components/a-com/a-com.wxml-->
+<view>
 <text>A组件</text>
+<view>
+{{num}}
+</view>
+<button bindtap="modify">修改值</button>
+</view>
