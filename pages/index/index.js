@@ -41,7 +41,17 @@ Page({
           })
         }
       })
-    }
+    };
+    // 请求头上加了token
+    wx.request({
+      url: 'https://api.juooo.com/home/index/getClassifyHome?city_id=0&abbreviation=&version=6.0.8&referer=2',
+      header:{
+        token:'aaaa'
+      },
+      success:function(res){
+        console.log(res);
+      }
+    })
   },
   getUserInfo: function(e) {
     console.log(e)
