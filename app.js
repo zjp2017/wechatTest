@@ -1,4 +1,5 @@
 //app.js
+import bus from 'iny-bus';
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -34,6 +35,8 @@ App({
     })
   },
   globalData: {
-    userInfo: null
-  }
-})
+    userInfo: null,
+    globalInfor:'123456'
+  },
+  eventBus:bus
+});

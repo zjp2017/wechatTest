@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "a-com": "/components/a-com/a-com",
+    "b-com": "/components/b-com/b-com"
+  }
+}
